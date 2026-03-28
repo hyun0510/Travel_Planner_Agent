@@ -58,7 +58,7 @@ def save_plan(plan_content: str) -> TravelPlan:
     )
 
     store = get_store()
-    store["TravelPlan"].append(plan)
+    store["saved_plans"].append(plan)
 
     return plan
 
