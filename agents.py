@@ -5,7 +5,9 @@ from langchain.agents import create_agent
 def get_travel_planner_agent(model):
     tools=[
         save_information,
-        get_saved_information
+        get_saved_information,
+        save_plan,
+        get_saved_plan
     ]
 
     system_prompt = """
